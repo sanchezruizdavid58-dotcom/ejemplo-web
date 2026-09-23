@@ -51,3 +51,9 @@ thead{
 	background-color: rgb(234, 47, 47);
 	padding: 1mm;
 }
+nav{
+	background-color: rgb(47, 119, 234);
+	padding: 1mm;
+	border: 1px solid;
+
+}
