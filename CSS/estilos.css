@@ -1,0 +1,53 @@
+header{
+	
+		align-items: center;
+		background-color: rgb(234, 47, 47);
+		padding: 1mm;
+}
+
+
+
+
+
+.fdh{
+	background: green;
+}
+
+.ldm{
+	background: blue;
+}
+.SOS{
+	background: purple;
+}
+.rd{
+	background: red;
+}
+.Ing{
+	background: yellow;
+}
+.fol{
+	background-color: aqua;
+}
+.bd{
+	background-color: brown;
+}
+.pi{
+	background-color: darkslategrey;
+}
+.dg{
+	background-color: darkorange;
+}
+footer{
+	background-color: rgb(234, 47, 47);
+	padding: 1mm;
+	text-align: center;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+thead{
+	border: 1px solid;
+	background-color: rgb(234, 47, 47);
+	padding: 1mm;
+}
