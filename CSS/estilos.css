@@ -41,7 +41,6 @@ header{
 	background-color: darkorange;
 }
 footer{
-	background-color: rgb(234, 47, 47);
 	padding: 1mm;
 	text-align: center;
 }
@@ -74,5 +73,5 @@ nav a{
 nav a:hover{
 	background-color: #3b82f6; 
 	color: #ffffff;
-	
+
 }
