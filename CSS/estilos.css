@@ -2,7 +2,10 @@ header{
 	
 		align-items: center;
 		background-color: rgb(234, 47, 47);
-		padding: 1mm;
+		padding: 15px 30px;
+		display: flex;
+		justify-content: space-between;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -51,9 +54,25 @@ thead{
 	background-color: rgb(234, 47, 47);
 	padding: 1mm;
 }
-nav{
-	background-color: rgb(47, 119, 234);
-	padding: 1mm;
-	border: 1px solid;
+header h1{
+	color: white;
+	font-size: 1.2rem;
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+nav a{
+	color: #cbd5e1;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	padding: 8px 16px;
+	margin-left: 10px;
+	border-radius: 4px;
+	transition:all 0.3s ease;
 
+}
+nav a:hover{
+	background-color: #3b82f6; 
+	color: #ffffff;
+	
 }
