@@ -14,40 +14,40 @@ header{
 
 .fdh{
 	background-color: rgb(121, 249, 121);
-	color: white;
+	color: black;
 }
 
 .ldm{
 	background: rgb(77, 77, 211);
-	color: white;
+	color: black;
 }
 .SOS{
 	background-color: rgb(237, 92, 237);
-	color: white;
+	color: black;
 }
 .rd{
 	background-color: rgb(233, 103, 103);
-	color: white;
+	color: black;
 }
 .Ing{
 	background-color: rgb(201, 201, 90);
-	color: white;
+	color: black;
 }
 .fol{
 	background-color: rgb(124, 235, 235);
-	color: white;
+	color: black;
 }
 .bd{
 	background-color: rgb(222, 94, 94);
-	color: white;
+	color: black;
 }
 .pi{
 	background-color: rgb(159, 237, 237);
-	color: white;
+	color: black;
 }
 .dg{
 	background-color: rgb(239, 172, 90);
-	color: white;
+	color: black;
 }
 footer{
 	background-color: rgba(231, 65, 65, 0.899);
@@ -73,7 +73,7 @@ header h1{
 	font-family: Arial, sans-serif;
 }
 nav a{
-	color: #cbd5e1;
+	color: #fafafa;
 	text-decoration: none;
 	font-family: Arial, sans-serif;
 	font-weight: bold;
@@ -85,8 +85,8 @@ nav a{
 
 }
 nav a:hover{
-	background-color: #196cf1; 
-	color: #ffffff;
+	background-color: #196cf190; 
+	color: #eecbcb;
 
 }
 body{
