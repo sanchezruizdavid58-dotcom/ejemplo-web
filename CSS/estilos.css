@@ -13,40 +13,40 @@ header{
 
 
 .fdh{
-	background-color: green;
+	background-color: rgb(121, 249, 121);
 	color: white;
 }
 
 .ldm{
-	background: blue;
+	background: rgb(77, 77, 211);
 	color: white;
 }
 .SOS{
-	background-color: purple;
+	background-color: rgb(237, 92, 237);
 	color: white;
 }
 .rd{
-	background-color: red;
+	background-color: rgb(233, 103, 103);
 	color: white;
 }
 .Ing{
-	background-color: yellow;
+	background-color: rgb(201, 201, 90);
 	color: white;
 }
 .fol{
-	background-color: aqua;
+	background-color: rgb(124, 235, 235);
 	color: white;
 }
 .bd{
-	background-color: brown;
+	background-color: rgb(222, 94, 94);
 	color: white;
 }
 .pi{
-	background-color: darkslategrey;
+	background-color: rgb(159, 237, 237);
 	color: white;
 }
 .dg{
-	background-color: darkorange;
+	background-color: rgb(239, 172, 90);
 	color: white;
 }
 footer{
