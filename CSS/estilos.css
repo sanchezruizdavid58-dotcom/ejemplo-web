@@ -15,48 +15,39 @@ header{
 .fdh{
 	background-color: rgb(121, 249, 121);
 	color: white;
-	outline-color: black;
 }
 
 .ldm{
 	background: rgb(77, 77, 211);
 	color: white;
-	style-color: black;
 }
 .SOS{
 	background-color: rgb(237, 92, 237);
 	color: white;
-	style-color: black;
 }
 .rd{
 	background-color: rgb(233, 103, 103);
 	color: white;
-	style-color: black;
 }
 .Ing{
 	background-color: rgb(201, 201, 90);
 	color: white;
-	style-color: black;
 }
 .fol{
 	background-color: rgb(124, 235, 235);
 	color: white;
-	stroke-color: black;
 }
 .bd{
 	background-color: rgb(222, 94, 94);
 	color: white;
-	style-color: black;
 }
 .pi{
 	background-color: rgb(159, 237, 237);
 	color: white;
-	style-color: black;
 }
 .dg{
 	background-color: rgb(239, 172, 90);
 	color: white;
-	style-color: black;
 }
 footer{
 	background-color: rgb(234, 47, 47);
