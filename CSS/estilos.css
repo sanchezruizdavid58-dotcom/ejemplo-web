@@ -41,7 +41,7 @@ header{
 .fol{
 	background-color: rgb(124, 235, 235);
 	color: white;
-	style-color: black;
+	stroke-color: black;
 }
 .bd{
 	background-color: rgb(222, 94, 94);
