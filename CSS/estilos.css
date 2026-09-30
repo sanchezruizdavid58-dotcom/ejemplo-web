@@ -181,5 +181,11 @@ li {
 address {
 	font-style: normal;
 	font-size: 0.9rem;
-	color: #555555;
+	color: white
+}
+
+nav a.activo {
+	background-color: #0056b3;
+	color: white;
+	border-bottom: 2px solid white;
 }
