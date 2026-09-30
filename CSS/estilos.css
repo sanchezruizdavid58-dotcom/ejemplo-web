@@ -13,32 +13,41 @@ header{
 
 
 .fdh{
-	background: green;
+	background-color: green;
+	color: white;
 }
 
 .ldm{
 	background: blue;
+	color: white;
 }
 .SOS{
-	background: purple;
+	background-color: purple;
+	color: white;
 }
 .rd{
-	background: red;
+	background-color: red;
+	color: white;
 }
 .Ing{
-	background: yellow;
+	background-color: yellow;
+	color: white;
 }
 .fol{
 	background-color: aqua;
+	color: white;
 }
 .bd{
 	background-color: brown;
+	color: white;
 }
 .pi{
 	background-color: darkslategrey;
+	color: white;
 }
 .dg{
 	background-color: darkorange;
+	color: white;
 }
 footer{
 	background-color: rgb(234, 47, 47);
