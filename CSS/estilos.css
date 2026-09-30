@@ -156,7 +156,7 @@ th {
 }
 
 body {
-	background-image: url("LLMM/imagenes/fondo.avif");
+	background-image: url('LLMM/imagenes/fondo.jpg');
 	background-size: cover;
 }
 
