@@ -274,3 +274,161 @@ nav a.activo {
 .resaltado {
 	background-color: yellow;
 }
+
+.sost {
+	background-color: #b2c9eb;
+	color: black;
+}
+
+.par {
+	background-color: #358e6f;
+	color: black;
+}
+
+.preformatted-text {
+    font-family: monospace;
+    font-size: 0.9em;
+    background-color: transparent;
+    margin: 5px 0;
+}
+
+.flower-img {
+    max-width: 450px;
+    height: auto;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.google-link-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-yellow {
+    background-color: #ffd700;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #b89700;
+    display: inline-block;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 2;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 350px;
+    position: relative;
+}
+
+.yellow-highlight {
+    background-color: yellow;
+    padding: 2px 4px;
+    font-weight: bold;
+}
+
+.red-text {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.bottom-section {
+    background-color: #6495ed; /* Azul claro estilo Bootstrap/ejemplo */
+    border: 1px solid #000;
+    padding: 20px;
+    margin-top: 50px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-white {
+    background-color: white;
+    padding: 4px 8px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ccc;
+    font-size: 0.85em;
+    width: fit-content;
+}
+
+.chapter-title {
+    margin: 0;
+    color: black;
+    font-weight: bold;
+}
+
+.table-container {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.table-title {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tabla-1 {
+    border: 2px solid blue;
+    width: 600px;
+}
+
+.tabla-1 th, .tabla-1 td {
+    border: 2px solid blue;
+    padding: 15px;
+}
+
+.tabla-1 th {
+    font-weight: bold;
+}
+
+.align-center {
+    vertical-align: middle;
+}
+
+.tabla-2 {
+    border: 2px solid #b5b500; /* Marco amarillo/verdoso oscuro */
+    width: 600px;
+}
+
+.tabla-2 th, .tabla-2 td {
+    border: 1px solid #b5b500;
+    padding: 12px;
+    background-color: #e0e0e0; /* Color gris claro por defecto */
+}
+
+.tabla-2 th {
+    font-weight: bold;
+    background-color: #d1d1d1;
+}
+
+.tabla-2 td.verde {
+    background-color: #93c47d; 
+}
+
+.centro-vertical {
+    vertical-align: middle;
+}
+
+.table-title {
+	color: white;
+}
+

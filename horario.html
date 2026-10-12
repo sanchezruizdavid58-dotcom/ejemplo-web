@@ -1,95 +1,128 @@
 <!DOCTYPE html>
-<html lang="es"></html>
-	<head>	
-		<meta charset="UTF-8">
-		<title>Horario</title>
-		<link rel="stylesheet" href="CSS/estilos.css">
-	</head>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+	<title>Horario ASIR</title>
+    
+    <link rel="icon" href="imagenes/españa.jpg" type="image/png" />
+    <link rel="stylesheet" href="CSS/estilos.css">
+  </head>
 
-		<body>
-			<header>
-				<h1>Alumnos de ASIR1</h1>
-				<nav>
-					<a href="index.html">Inicio</a>
-					<a href="horario.html">Horario</a>
-					<a href="formulario.html">Formulario</a>
-					<a href="cuadernoejercicios.html">Cuaderno de ejercicios</a>
-					<a href="ejemplo.html">Ejemplo</a>
-				</nav>
-			</header>
-			<table border="1">
-				<thead>
-					<tr>
-						<th>Hora</th>
-						<th>Lunes</th>
-						<th>Martes</th>
-						<th>Miércoles</th>
-						<th>Jueves</th>
-						<th>Viernes</th>
-					</tr>
-				</thead>
-				<tbody>
+<body>
+    <!-- HEADER -->
+	<header>
+	  <h1>Horario ASIR</h1>
+	  <nav>
+		<a href="index.html">Inicio</a>
+		<a href="horario.html">Horario</a>
+		<a href="formulario.html">Formulario</a>
+		<a href="cuadernoejercicios.html">Cuaderno de ejercicios</a>
+		<a href="ejemplo.html">Ejemplo</a>
+	  </nav>
+	</header>
 
-					<tr>
-						<td>8:30-9:25</td>
-						<td Class="fdh">Fundamentos de Hardware</td>
-						<td Class="SOS">Sostenibilidad</td>
-						<td Class="ldm" rowspan="2">Lenguaje de Marcas</td>
-						<td Class="ing">Inglés</td>
-						<td Class="rd" rowspan="2">Redes</td>
-					</tr>
-					<tr>
-						<td>9:25-10:20</td>
-						<td Class="fol" rowspan="2">FOL</td>
-						<td Class="fol">FOL</td>
+    <!-- CONTENIDO -->
+    <main>
 
-						<td Class="SOS" rowspan="2">SSOO</td>
+      <h2>Horario ASIR</h2>
+      <table>
+        <thead>
+          <!-- 1ª fila (Días de la semana) -->
+          <tr>
+            <td></td>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miércoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+          </tr>
+        </thead>
 
-					</tr>
-					<tr>
-						<td>10:20-11:15</td>
+        <tbody>
+          <!-- 2º Fila (1ª hora) -->
+          <tr>
+            <td>8:30- 9:25</td>
+            <td class="fdh">Fundamentos de hardware</td>
+            <td class="sost">Sostenibilidad</td>
+            <td class="ldm" rowspan="2">Lenguajes de marcas</td>
+            <td class="Ing">Inglés</td>
+            <td class="par" rowspan="2">Planificación y administración de redes</td>
+          </tr>
 
-						<td Class="bd">Bases de datos</td>
-						<td Class="rd">Redes</td>
+          <!-- 3º Fila (2ª hora) -->
+          <tr>
+            <td>9:25-10:20</td>
+            <td class="fol" rowspan="2">IPE</td>
+            <td class="fol">IPE</td>
+            <Td class="SOS" rowspan="2">Implantación de sistemas operativos</td>
+          </tr>
 
-						<td Class="fdh">Fundamentos de Hardware</td>
-					</tr>
-					<tr>
-						<td colspan="6" style="text-align: center">RECREO</td>
-					</tr>
-					<tr>
-						<td>11:45-12:40</td>
-						<td Class="ing">Inglés</td>
-						<td Class="bd">Base de Datos</td>
-						<td Class="rd">Redes</td>
-						<td Class="bd" rowspan="2">Base de Datos</td>
-						<td Class="fdh">Fundamentos de Hardware</td>
-					</tr>
-					<tr>
-						<td>12:40-13:35</td>
-						<td Class="SOS" rowspan="2">SS00</td>
-						<td Class="pi">Proyecto Intermodular</td>
-						<td Class="dg" rowspan="2">Digitalización</td>
+          <!-- 4º Fila (3ª hora) -->
+          <tr>
+            <td>10:20-11:15</td>
+            <td class="bd">BBDD</td>
+            <td class="par">Planificación y administración de redes</td>
+            <td class="fdh">Fundamentos de hardware</td>
+          </tr>
 
-						<td Class="SOS" rowspan="2">SSOO</td>
-					</tr>
-					<tr>
-						<td>13:35-14:30</td>
+          <!-- 5º Fila (Recreo) -->
+          <tr class="recreo">
+            <td>11:15-11:45</td>
+            <td colspan="5">R E C R E O</td>
+          </tr>
 
-						<td Class="fdh">Fundamentos de Hardware</td>
+          <!-- 6º Fila (4ª hora) -->
+          <tr>
+            <td>11:45-12:40</td>
 
-						<td Class="ldm">Lenguaje de marcas</td>
-					</tr>
-				</tbody>
-			</table>
-		</body>
-		<!--FOOTER PIE DE PAGINA-->
-		<footer>
-			<p>CIFP Virgen de Gracia</p>
-			<p>
-				Contacto:
-				<a href="mailto:info@cifpvirgendegracia.com">info@cifpvirgendegracia.com</a>
-			</p>
-		</footer>
-	</body>
+            <td class="Ing">Inglés</td>
+            <td class="bd">BBDD</td>
+            <td class="par">Planificación y administración de redes</td>
+            <td class="bd" rowspan="2">BBDD</td>
+            <td class="fdh">Fundamentos de hardware</td>
+          </tr>
+
+          <!-- 7º Fila (5ª hora) -->
+          <tr>
+            <td>12:40-13:35</td>
+
+            <td class="SOS" rowspan="2">Implantación de sistemas operativos</td>
+            <td class="pi">Proyecto intermodular</td>
+            <td class="dg" rowspan="2">Digitalización</td>
+            <td class="SOS" rowspan="2">Implantación de sistemas operativos</td>
+          </tr>
+
+          <!-- 8º Fila (6ª hora) -->
+		 <tr>
+            <td>13:35-14:30</td>
+
+            <!-- ya está cubierto por el rowspan de arriba -->
+            <td class="par">Planificación y administración de redes</td>
+            <!-- ya está cubierto por el rowspan de arriba -->
+            <td class="ldm">Lenguajes de marcas</td>
+            <!-- ya está cubierto por el rowspan de arriba -->
+          </tr>
+          
+         </tbody>
+      </table>
+	</main>
+</body>
+
+
+    <!-- FOOTER -->
+	<footer>
+    	<div id="footer"></div>
+		<p>CIFP Virgen de Gracia</p>   
+           
+            <address>
+                Para cualquier consulta visitanos en el <a href="https://cifpvirgendegracia.com/" target="_blank">cifpvirgendegracia.com/</a>
+            </address>
+
+	</footer>
+            
+
+ 
+  </body>
 </html>

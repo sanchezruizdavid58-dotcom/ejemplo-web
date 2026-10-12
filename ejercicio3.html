@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link rel="icon" href="imagenes/españa.jpg" type="image/png" />
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Ejercicio 3</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="horario.html">Horario</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="cuadernoejercicios.html">Cuaderno de ejercicios</a>
+            <a href="ejemplo.html">Ejemplo</a>
+        </nav>
+    </header>
+
+    <div class="table-container">
+        <p class="table-title">Tabla prueba 1</p>
+        <table class="tabla-1">
+            
+            <tr>
+                <th>columna 1</th>
+                <th>columna 2</th>
+                <th>columna 3</th>
+                <th>columna 4</th>
+            </tr>
+            
+            <tr>
+                <td>col1</td>
+                <!-- colspan="2" para ocupar columna 2 y 3 -->
+                <td colspan="2">col2</td>
+                <!-- rowspan="3" para ocupar 3 filas hacia abajo -->
+                <td rowspan="3" class="align-center">col3</td>
+            </tr>
+            <!-- Tercera fila -->
+            <tr>
+                <td>colum1</td>
+                <td>colum2</td>
+                <td>colum4</td>
+            </tr>
+            <!-- Cuarta fila (opcional para mantener estructura si hace falta, o integrada en celdas) -->
+        </table>
+    </div>
+
+    <div class="table-container">
+        <p class="table-title">Tabla prueba 2</p>
+        <table class="tabla-2">
+        
+            <tr>
+                <th>columna 1</th>
+                <th>columna 2</th>
+                <th>columna 3</th>
+                <th>columna 4</th>
+            </tr>
+            <!-- Fila 2 -->
+            <tr>
+                <td class="verde">col1</td>
+                <!-- colspan="2" para ocupar columna 2 y 3 -->
+                <td colspan="2" class="verde">col2</td>
+                <td class="verde">col3</td>
+            </tr>
+            <!-- Fila 3 -->
+            <tr>
+                <td>colum1</td>
+                <!-- rowspan="3" para ocupar 3 filas (Fila 3, 4 y 5) -->
+                <td rowspan="3" class="centro-vertical">colum2</td>
+                <td>colum3</td>
+                <td>colum4</td>
+            </tr>
+            <!-- Fila 4 -->
+            <tr>
+                <td class="verde">column1</td>
+                <!-- La celda colum2 ya ocupa esta fila gracias al rowspan anterior -->
+                <td class="verde">column3</td>
+                <td class="verde">column4</td>
+            </tr>
+            <!-- Fila 5 -->
+            <tr>
+                <td>colu1</td>
+                <!-- La celda colum2 ya ocupa esta fila también -->
+                <td>colu3</td>
+                <td>colu4</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
