@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad de JavaScript - Mi tienda</title>
+    <link rel="icon" href="imagenes/favicon.svg" type="image/svg+xml">
+    <link id="tema-claro" rel="stylesheet" href="CSS/estilos.css">
+    <link id="tema-oscuro" rel="stylesheet" href="CSS/oscuro.css" disabled>
+    <script src="js/cambiamodo.js" defer></script>
+    <script src="js/volver.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Actividad de JavaScript</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="horario.html">Horario</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="cuadernoejercicios.html">Cuaderno de ejercicios</a>
+            <a href="ejemplo.html">Ejemplo</a>
+            <a href="calculadora.html">Calculadora</a>
+            <a href="PiedraPapelTijera.html">Juego</a>
+            <a href="tienda.html" class="activo" aria-current="page">tienda</a>
+        </nav>
+        <button type="button" class="theme-toggle" data-cambiar-tema aria-pressed="false">Modo oscuro</button>
+    </header>
+
+    <main>
+        <h2>Mi pequeña tienda</h2>
+        <p>En esta actividad practico variables, arrays, operadores, condicionales, booleanos, bucles y funciones.</p>
+        <p>Los resultados se muestran con <code>console.log()</code>, tal como pide el ejercicio.</p>
+        <h3>Cómo ejecutar el archivo</h3>
+        <ol>
+            <li>Descarga el archivo JavaScript.</li>
+            <li>Abre una terminal en la carpeta donde lo guardaste.</li>
+            <li>Ejecuta <code>node mitienda.js</code>.</li>
+        </ol>
+        <p><a href="mitienda.js" download>Descargar mitienda.js</a></p>
+    </main>
+
+    <footer>
+        <p>CIFP Virgen de Gracia</p>
+    </footer>
+</body>
+
+</html>
