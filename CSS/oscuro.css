@@ -124,6 +124,20 @@ footer {
     background: rgba(2, 6, 23, 0.96);
 }
 
+.submenu {
+    border-color: #334155;
+    background: #111c34;
+}
+
+.submenu a {
+    color: #e2e8f0;
+}
+
+.submenu a:hover {
+    background: #1e3a5f;
+    color: #ffffff;
+}
+
 .boton-volver {
     background: #1d4ed8;
     color: #ffffff;
