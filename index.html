@@ -4,34 +4,49 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Indice</title>
-        <link rel="stylesheet" href="CSS/estilos.css">
+        <link id="tema-claro" rel="stylesheet" href="CSS/estilos.css">
+        <link id="tema-oscuro" rel="stylesheet" href="CSS/oscuro.css" disabled>
+        <script src="js/cambiamodo.js" defer></script>
         <link rel="icon" href="imagenes/españa.jpg" type="image/png" />
     </head>
     <body>
         <header>
-            <h1>Mi primera pagina WEB en Lenguaje de marcas</h1>
+            <h1>Mi primera página web</h1>
             <nav>
-                <a href="index.html">Inicio</a>
+                <a href="index.html" class="activo" aria-current="page">Inicio</a>
                 <a href="horario.html">Horario</a>
                 <a href="formulario.html">Formulario</a>
                 <a href="cuadernoejercicios.html">Cuaderno de ejercicios</a>
                 <a href="ejemplo.html">Ejemplo</a>
                 <a href="calculadora.html">Calculadora</a>
                 <a href="PiedraPapelTijera.html">Juego</a>
-                <a href="EstilosJavaScript.html">Modos</a>
             </nav>
+            <button type="button" class="theme-toggle" data-cambiar-tema aria-pressed="false">Modo oscuro</button>
         </header>
         <main>
-            <h2>Presentación</h2>
-            <p>Bienvenidos a mi primera pagina web</p>
-
-            <h2>Contenido</h2>
-            <p>En esta pagina web podras encontrar:</p>
-            <ul>
-                <li>Un horario de clase</li>
-                <li>Un formulario de contacto</li>
-                <li>Un cuaderno de ejercicios</li>
-            </ul>
+            <section class="inicio-portada">
+                <p class="inicio-etiqueta">Lenguaje de marcas · CIFP Virgen de Gracia</p>
+                <h2>Aprender, practicar y crear en la web</h2>
+                <p>Este espacio reúne mis trabajos y ejercicios de clase: desde páginas y formularios hasta pequeñas herramientas interactivas.</p>
+            </section>
+            <section class="inicio-secciones" aria-label="Qué encontrarás en la página">
+                <article class="inicio-area">
+                    <span class="inicio-numero">01</span>
+                    <h3>Aprender</h3>
+                    <p>Un horario de clase y ejercicios para repasar lo aprendido.</p>
+                </article>
+                <article class="inicio-area">
+                    <span class="inicio-numero">02</span>
+                    <h3>Practicar</h3>
+                    <p>Ejemplos de HTML, formularios y otros trabajos en desarrollo.</p>
+                </article>
+                <article class="inicio-area">
+                    <span class="inicio-numero">03</span>
+                    <h3>Probar</h3>
+                    <p>Una calculadora y un juego para interactuar con la página.</p>
+                </article>
+            </section>
+            <p class="inicio-nota">Elige una sección desde el menú superior. También puedes cambiar el tema claro u oscuro desde cualquier página.</p>
         </main>
         <footer>
 

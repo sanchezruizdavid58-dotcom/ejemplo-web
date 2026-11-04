@@ -39,6 +39,24 @@ main form fieldset,
     color: #e2e8f0;
 }
 
+.inicio-portada {
+    background: linear-gradient(120deg, #111c34, #1e3a5f);
+}
+
+.inicio-portada .inicio-etiqueta {
+    color: #bfdbfe;
+}
+
+.inicio-portada > p:last-child {
+    color: #e2e8f0;
+}
+
+.inicio-area {
+    border-color: #334155;
+    background: #1e293b;
+    color: #e2e8f0;
+}
+
 main form input,
 main form textarea,
 main form select,
@@ -62,8 +80,23 @@ table {
     color: #e2e8f0;
 }
 
-.juego-puntuacion {
-    color: #cbd5e1;
+.juego-resultado.estado-victoria {
+    background: #14532d;
+    color: #dcfce7;
+}
+
+.juego-resultado.estado-empate {
+    background: #713f12;
+    color: #fef3c7;
+}
+
+.juego-resultado.estado-derrota {
+    background: #7f1d1d;
+    color: #fee2e2;
+}
+
+.juego-puntos {
+    color: #bfdbfe;
 }
 
 th,

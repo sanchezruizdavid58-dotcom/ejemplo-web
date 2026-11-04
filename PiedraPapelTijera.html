@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piedra, papel o tijera</title>
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link id="tema-claro" rel="stylesheet" href="CSS/estilos.css">
+    <link id="tema-oscuro" rel="stylesheet" href="CSS/oscuro.css" disabled>
+    <script src="js/cambiamodo.js" defer></script>
     <script src="js/juego.js" defer></script>
 </head>
 
@@ -18,21 +20,40 @@
             <a href="cuadernoejercicios.html">Cuaderno de ejercicios</a>
             <a href="ejemplo.html">Ejemplo</a>
             <a href="calculadora.html">Calculadora</a>
-            <a href="PiedraPapelTijera.html">Juego</a>
-            <a href="EstilosJavaScript.html">Modos</a>
+            <a href="PiedraPapelTijera.html" class="activo" aria-current="page">Juego</a>
         </nav>
+        <button type="button" class="theme-toggle" data-cambiar-tema aria-pressed="false">Modo oscuro</button>
     </header>
     <main class="juego">
-        <h1>Elige tu jugada</h1>
-        <div class="juego-opciones" aria-label="Opciones del juego">
-            <button type="button" data-eleccion="piedra">Piedra</button>
-            <button type="button" data-eleccion="papel">Papel</button>
-            <button type="button" data-eleccion="tijera">Tijera</button>
+        <p class="juego-etiqueta">Un clásico de siempre</p>
+        <h1>Piedra, papel o tijera</h1>
+        <p class="juego-introduccion">Elige una opción y juega contra el ordenador.</p>
+        <div class="juego-opciones" role="group" aria-label="Elige tu jugada">
+            <button type="button" data-eleccion="piedra">
+                <span class="juego-icono" aria-hidden="true">✊</span>
+                <span>Piedra</span>
+            </button>
+            <button type="button" data-eleccion="papel">
+                <span class="juego-icono" aria-hidden="true">✋</span>
+                <span>Papel</span>
+            </button>
+            <button type="button" data-eleccion="tijera">
+                <span class="juego-icono" aria-hidden="true">✌</span>
+                <span>Tijera</span>
+            </button>
         </div>
-
-        <p id="resultado-juego" class="juego-resultado">Haz tu jugada para empezar a jugar.</p>
-        <p class="juego-puntuacion">Puntuación: tú <span id="puntos-jugador">0</span> - <span
-                id="puntos-ordenador">0</span> ordenador</p>
+        <p id="resultado-juego" class="juego-resultado" aria-live="polite" aria-atomic="true">Haz tu jugada para empezar.</p>
+        <div class="juego-marcador" aria-label="Marcador">
+            <div class="juego-jugador">
+                <span class="juego-nombre">Tú</span>
+                <span id="puntos-jugador" class="juego-puntos">0</span>
+            </div>
+            <span class="juego-separador" aria-hidden="true">:</span>
+            <div class="juego-jugador">
+                <span class="juego-nombre">Ordenador</span>
+                <span id="puntos-ordenador" class="juego-puntos">0</span>
+            </div>
+        </div>
         <button type="button" id="reiniciar-juego" class="juego-reiniciar">Reiniciar partida</button>
     </main>
     <footer>

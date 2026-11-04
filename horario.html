@@ -7,7 +7,9 @@
 	<title>Horario ASIR</title>
     
     <link rel="icon" href="imagenes/españa.jpg" type="image/png" />
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link id="tema-claro" rel="stylesheet" href="CSS/estilos.css">
+    <link id="tema-oscuro" rel="stylesheet" href="CSS/oscuro.css" disabled>
+    <script src="js/cambiamodo.js" defer></script>
   </head>
 
 <body>
@@ -16,14 +18,14 @@
 	  <h1>Horario ASIR</h1>
 	  <nav>
 		<a href="index.html">Inicio</a>
-		<a href="horario.html">Horario</a>
+		<a href="horario.html" class="activo" aria-current="page">Horario</a>
 		<a href="formulario.html">Formulario</a>
 		<a href="cuadernoejercicios.html">Cuaderno de ejercicios</a>
 		<a href="ejemplo.html">Ejemplo</a>
     <a href="calculadora.html">Calculadora</a>
     <a href="PiedraPapelTijera.html">Juego</a>  
-    <a href="EstilosJavaScript.html">Modos</a>
 	  </nav>
+      <button type="button" class="theme-toggle" data-cambiar-tema aria-pressed="false">Modo oscuro</button>
 	</header>
 
     <!-- CONTENIDO -->

@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
     <script src="js/calculadora.js" defer></script>
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link id="tema-claro" rel="stylesheet" href="CSS/estilos.css">
+    <link id="tema-oscuro" rel="stylesheet" href="CSS/oscuro.css" disabled>
+    <script src="js/cambiamodo.js" defer></script>
 
 </head>
 
@@ -18,10 +20,10 @@
             <a href="formulario.html">Formulario</a>
             <a href="cuadernoejercicios.html">Cuaderno de ejercicios</a>
             <a href="ejemplo.html">Ejemplo</a>
-            <a href="calculadora.html">Calculadora</a>
+            <a href="calculadora.html" class="activo" aria-current="page">Calculadora</a>
             <a href="PiedraPapelTijera.html">Juego</a>
-            <a href="EstilosJavaScript.html">Modos</a>
         </nav>
+        <button type="button" class="theme-toggle" data-cambiar-tema aria-pressed="false">Modo oscuro</button>
     </header>
     <main class="calculadora">
         <h1>Calculadora</h1>
