@@ -1,12 +1,92 @@
-header, footer, main {
-    color: white;
-    background-color: black;
+body {
+    color-scheme: dark;
+    background-color: #080d18;
+    background-image: linear-gradient(rgba(2, 6, 23, 0.78), rgba(2, 6, 23, 0.86)), url('../imagenes/fondo.jpg');
+    color: #e2e8f0;
 }
 
-h1, h2, p{
-    color:beige;
+header {
+    background: linear-gradient(120deg, #050914, #111c34);
 }
 
-body{
-    background-color: black;
+main,
+main.calculadora,
+main.juego,
+.main-content,
+.bottom-section,
+.table-container {
+    border-color: #29364a;
+    background: rgba(15, 23, 42, 0.97);
+    color: #e2e8f0;
+}
+
+main h1,
+main h2,
+main h3,
+.chapter-title,
+.table-title,
+main p,
+main li,
+main label,
+main legend {
+    color: #e2e8f0;
+}
+
+main form fieldset,
+.preformatted-text {
+    border-color: #334155;
+    background: #111c34;
+    color: #e2e8f0;
+}
+
+main form input,
+main form textarea,
+main form select,
+.calculadora-pantalla {
+    border-color: #475569;
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+.calculadora-teclas button {
+    background: #263449;
+    color: #e2e8f0;
+}
+
+table {
+    background: #0f172a;
+}
+
+.juego-resultado {
+    background: #111c34;
+    color: #e2e8f0;
+}
+
+.juego-puntuacion {
+    color: #cbd5e1;
+}
+
+th,
+thead,
+.tabla-1 th,
+.tabla-2 th {
+    background: #1e3a5f;
+}
+
+th,
+td,
+.tabla-1 th,
+.tabla-1 td,
+.tabla-2 th,
+.tabla-2 td {
+    border-color: #334155;
+    color: #e2e8f0;
+}
+
+.tabla-2 td {
+    background: #1e293b;
+}
+
+footer {
+    background: rgba(2, 6, 23, 0.96);
 }
