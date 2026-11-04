@@ -1,25 +1,47 @@
-function juego(jugador, maquina) {
-    if (jugador == maquina) {
-        console.log("Empate");
-    }
+const opcionesJuego = ["piedra", "papel", "tijera"];
+const resultadoJuego = document.getElementById("resultado-juego");
+const puntosJugador = document.getElementById("puntos-jugador");
+const puntosOrdenador = document.getElementById("puntos-ordenador");
+const botonesJuego = document.querySelector(".juego-opciones");
+const botonReiniciar = document.getElementById("reiniciar-juego");
 
+let puntuacionJugador = 0;
+let puntuacionOrdenador = 0;
 
-    else if (
-        (jugador == "piedra" && maquina == "tijera") ||
-        (jugador == "tijera" && maquina == "papel") ||
-        (jugador == "papel" && maquina == "piedra")
+function jugar(eleccionJugador) {
+    const eleccionOrdenador = opcionesJuego[Math.floor(Math.random() * opcionesJuego.length)];
+    let resultado;
+
+    if (eleccionJugador === eleccionOrdenador) {
+        resultado = "¡Empate!";
+    } else if (
+        (eleccionJugador === "piedra" && eleccionOrdenador === "tijera") ||
+        (eleccionJugador === "papel" && eleccionOrdenador === "piedra") ||
+        (eleccionJugador === "tijera" && eleccionOrdenador === "papel")
     ) {
-      console.log("¡Gana jugador!");
+        puntuacionJugador += 1;
+        resultado = "¡Has ganado!";
     } else {
-        console.log("¡Gana máquina!");
+        puntuacionOrdenador += 1;
+        resultado = "Ha ganado el ordenador.";
     }
 
+    resultadoJuego.textContent = `Tú elegiste ${eleccionJugador}; el ordenador eligió ${eleccionOrdenador}. ${resultado}`;
+    puntosJugador.textContent = puntuacionJugador;
+    puntosOrdenador.textContent = puntuacionOrdenador;
 }
-let jugador = "piedra";
-let maquina = "tijera";
 
-let jugador1 = "piedra"; let maquina1 = "piedra";
-juego(jugador1, maquina1);
+botonesJuego.addEventListener("click", (evento) => {
+    const boton = evento.target.closest("button[data-eleccion]");
+    if (boton) {
+        jugar(boton.dataset.eleccion);
+    }
+});
 
-let jugador2 = "papel"; let maquina2 = "tijera";
-juego(jugador2, maquina2);
+botonReiniciar.addEventListener("click", () => {
+    puntuacionJugador = 0;
+    puntuacionOrdenador = 0;
+    puntosJugador.textContent = "0";
+    puntosOrdenador.textContent = "0";
+    resultadoJuego.textContent = "Puntuación reiniciada. ¡Haz tu jugada!";
+});

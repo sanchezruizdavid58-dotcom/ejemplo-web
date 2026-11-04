@@ -1,0 +1,12 @@
+header, footer, main {
+    color: white;
+    background-color: black;
+}
+
+h1, h2, p{
+    color:beige;
+}
+
+body{
+    background-color: black;
+}
