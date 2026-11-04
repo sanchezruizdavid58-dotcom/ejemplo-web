@@ -1,127 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-	<title>Horario ASIR</title>
-    
-    <link rel="icon" href="imagenes/españa.jpg" type="image/png" />
-    <link id="tema-claro" rel="stylesheet" href="CSS/estilos.css">
-    <link id="tema-oscuro" rel="stylesheet" href="CSS/oscuro.css" disabled>
-    <script src="js/cambiamodo.js" defer></script>
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Horario ASIR</title>
+
+  <link rel="icon" href="imagenes/españa.jpg" type="image/png" />
+  <link id="tema-claro" rel="stylesheet" href="CSS/estilos.css">
+  <link id="tema-oscuro" rel="stylesheet" href="CSS/oscuro.css" disabled>
+  <script src="js/cambiamodo.js" defer></script>
+  <script src="js/volver.js" defer></script>
+</head>
 
 <body>
-    <!-- HEADER -->
-	<header>
-	  <h1>Horario ASIR</h1>
-	  <nav>
-		<a href="index.html">Inicio</a>
-		<a href="horario.html" class="activo" aria-current="page">Horario</a>
-		<a href="formulario.html">Formulario</a>
-		<a href="cuadernoejercicios.html">Cuaderno de ejercicios</a>
-		<a href="ejemplo.html">Ejemplo</a>
-    <a href="calculadora.html">Calculadora</a>
-    <a href="PiedraPapelTijera.html">Juego</a>  
-	  </nav>
-      <button type="button" class="theme-toggle" data-cambiar-tema aria-pressed="false">Modo oscuro</button>
-	</header>
+  <!-- HEADER -->
+  <header>
+    <h1>Horario ASIR</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="horario.html" class="activo" aria-current="page">Horario</a>
+      <a href="formulario.html">Formulario</a>
+      <a href="cuadernoejercicios.html">Cuaderno de ejercicios</a>
+      <a href="ejemplo.html">Ejemplo</a>
+      <a href="calculadora.html">Calculadora</a>
+      <a href="PiedraPapelTijera.html">Juego</a>
+    </nav>
+    <button type="button" class="theme-toggle" data-cambiar-tema aria-pressed="false">Modo oscuro</button>
+  </header>
 
-    <!-- CONTENIDO -->
-    <main>
+  <!-- CONTENIDO -->
+  <main>
 
-      <h2>Horario ASIR</h2>
-      <table>
-        <thead>
-          <!-- 1ª fila (Días de la semana) -->
-          <tr>
-            <th scope="col">Hora</th>
-            <th scope="col">Lunes</th>
-            <th scope="col">Martes</th>
-            <th scope="col">Miércoles</th>
-            <th scope="col">Jueves</th>
-            <th scope="col">Viernes</th>
-          </tr>
-        </thead>
+    <h2>Horario ASIR</h2>
+    <div class="tabla-scroll" role="region" aria-label="Horario semanal" tabindex="0">
+    <table>
+      <thead>
+        <!-- 1ª fila (Días de la semana) -->
+        <tr>
+          <th scope="col">Hora</th>
+          <th scope="col">Lunes</th>
+          <th scope="col">Martes</th>
+          <th scope="col">Miércoles</th>
+          <th scope="col">Jueves</th>
+          <th scope="col">Viernes</th>
+        </tr>
+      </thead>
 
-        <tbody>
-          <!-- 2º Fila (1ª hora) -->
-          <tr>
-            <td>8:30- 9:25</td>
-            <td class="fdh">Fundamentos de hardware</td>
-            <td class="sost">Sostenibilidad</td>
-            <td class="ldm" rowspan="2">Lenguajes de marcas</td>
-            <td class="Ing">Inglés</td>
-            <td class="par" rowspan="2">Planificación y administración de redes</td>
-          </tr>
+      <tbody>
+        <!-- 2º Fila (1ª hora) -->
+        <tr>
+          <td>8:30- 9:25</td>
+          <td class="fdh">Fundamentos de hardware</td>
+          <td class="sost">Sostenibilidad</td>
+          <td class="ldm" rowspan="2">Lenguajes de marcas</td>
+          <td class="Ing">Inglés</td>
+          <td class="par" rowspan="2">Planificación y administración de redes</td>
+        </tr>
 
-          <!-- 3º Fila (2ª hora) -->
-          <tr>
-            <td>9:25-10:20</td>
-            <td class="fol" rowspan="2">IPE</td>
-            <td class="fol">IPE</td>
-            <Td class="SOS" rowspan="2">Implantación de sistemas operativos</td>
-          </tr>
+        <!-- 3º Fila (2ª hora) -->
+        <tr>
+          <td>9:25-10:20</td>
+          <td class="fol" rowspan="2">IPE</td>
+          <td class="fol">IPE</td>
+          <Td class="SOS" rowspan="2">Implantación de sistemas operativos</td>
+        </tr>
 
-          <!-- 4º Fila (3ª hora) -->
-          <tr>
-            <td>10:20-11:15</td>
-            <td class="bd">BBDD</td>
-            <td class="par">Planificación y administración de redes</td>
-            <td class="fdh">Fundamentos de hardware</td>
-          </tr>
+        <!-- 4º Fila (3ª hora) -->
+        <tr>
+          <td>10:20-11:15</td>
+          <td class="bd">BBDD</td>
+          <td class="par">Planificación y administración de redes</td>
+          <td class="fdh">Fundamentos de hardware</td>
+        </tr>
 
-          <!-- 5º Fila (Recreo) -->
-          <tr class="recreo">
-            <td>11:15-11:45</td>
-            <td colspan="5">R E C R E O</td>
-          </tr>
+        <!-- 5º Fila (Recreo) -->
+        <tr class="recreo">
+          <td>11:15-11:45</td>
+          <td colspan="5">R E C R E O</td>
+        </tr>
 
-          <!-- 6º Fila (4ª hora) -->
-          <tr>
-            <td>11:45-12:40</td>
+        <!-- 6º Fila (4ª hora) -->
+        <tr>
+          <td>11:45-12:40</td>
 
-            <td class="Ing">Inglés</td>
-            <td class="bd">BBDD</td>
-            <td class="par">Planificación y administración de redes</td>
-            <td class="bd" rowspan="2">BBDD</td>
-            <td class="fdh">Fundamentos de hardware</td>
-          </tr>
+          <td class="Ing">Inglés</td>
+          <td class="bd">BBDD</td>
+          <td class="par">Planificación y administración de redes</td>
+          <td class="bd" rowspan="2">BBDD</td>
+          <td class="fdh">Fundamentos de hardware</td>
+        </tr>
 
-          <!-- 7º Fila (5ª hora) -->
-          <tr>
-            <td>12:40-13:35</td>
+        <!-- 7º Fila (5ª hora) -->
+        <tr>
+          <td>12:40-13:35</td>
 
-            <td class="SOS" rowspan="2">Implantación de sistemas operativos</td>
-            <td class="pi">Proyecto intermodular</td>
-            <td class="dg" rowspan="2">Digitalización</td>
-            <td class="SOS" rowspan="2">Implantación de sistemas operativos</td>
-          </tr>
+          <td class="SOS" rowspan="2">Implantación de sistemas operativos</td>
+          <td class="pi">Proyecto intermodular</td>
+          <td class="dg" rowspan="2">Digitalización</td>
+          <td class="SOS" rowspan="2">Implantación de sistemas operativos</td>
+        </tr>
 
-          <!-- 8º Fila (6ª hora) -->
-		 <tr>
-            <td>13:35-14:30</td>
+        <!-- 8º Fila (6ª hora) -->
+        <tr>
+          <td>13:35-14:30</td>
 
-            <!-- ya está cubierto por el rowspan de arriba -->
-            <td class="par">Planificación y administración de redes</td>
-            <!-- ya está cubierto por el rowspan de arriba -->
-            <td class="ldm">Lenguajes de marcas</td>
-            <!-- ya está cubierto por el rowspan de arriba -->
-          </tr>
-          
-         </tbody>
-      </table>
-	</main>
-    <!-- FOOTER -->
-	<footer>
-    	<div id="footer"></div>
-		<p>CIFP Virgen de Gracia</p>   
-           
-            <address>
-                Para cualquier consulta visitanos en el <a href="https://cifpvirgendegracia.com/" target="_blank">cifpvirgendegracia.com/</a>
-            </address>
+          <!-- ya está cubierto por el rowspan de arriba -->
+          <td class="par">Planificación y administración de redes</td>
+          <!-- ya está cubierto por el rowspan de arriba -->
+          <td class="ldm">Lenguajes de marcas</td>
+          <!-- ya está cubierto por el rowspan de arriba -->
+        </tr>
 
-	</footer>
-  </body>
+      </tbody>
+    </table>
+    </div>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <div id="footer"></div>
+    <p>CIFP Virgen de Gracia</p>
+
+    <address>
+      Para cualquier consulta visitanos en el <a href="https://cifpvirgendegracia.com/"
+        target="_blank">cifpvirgendegracia.com/</a>
+    </address>
+
+  </footer>
+</body>
+
 </html>

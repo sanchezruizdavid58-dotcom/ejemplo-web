@@ -902,12 +902,28 @@ a:focus-visible {
 	outline-offset: 3px;
 }
 
+.boton-volver {
+	display: block;
+	margin: 0 0 20px;
+	padding: 12px 18px;
+	border-radius: 999px;
+}
+
+.boton-volver:hover {
+	transform: translateY(-2px);
+}
+
 table {
 	overflow: hidden;
 	border: 1px solid var(--color-border);
 	border-radius: 14px;
 	background: var(--color-surface);
 	box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+.tabla-scroll {
+	max-width: 100%;
+	overflow-x: auto;
 }
 
 th,

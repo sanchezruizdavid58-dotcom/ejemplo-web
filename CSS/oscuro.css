@@ -123,3 +123,8 @@ td,
 footer {
     background: rgba(2, 6, 23, 0.96);
 }
+
+.boton-volver {
+    background: #1d4ed8;
+    color: #ffffff;
+}
